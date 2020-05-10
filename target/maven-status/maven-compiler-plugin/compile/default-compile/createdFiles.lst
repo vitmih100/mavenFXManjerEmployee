@@ -1,0 +1,12 @@
+enums/EFRONT_END.class
+mavenfxmanjeremployee/MainApp.class
+menajeremployee/XmlIOService.class
+menajeremployee/EmployeeDb.class
+enums/EMenu.class
+mavenfxmanjeremployee/FXMLController.class
+enums/EBACK_END.class
+enums/Gender.class
+mavenfxmanjeremployee/AddDialogController.class
+menajeremployee/ConvertingToJson.class
+menajeremployee/Employee.class
+menajeremployee/ConnectionDb.class

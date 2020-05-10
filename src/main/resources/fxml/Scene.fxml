@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="740.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mavenfxmanjeremployee.FXMLController">
+    <children>
+      <Pane prefHeight="240.0" prefWidth="722.0">
+         <children>
+            <Label layoutX="37.0" layoutY="23.0" text="Actions" />
+            <Label layoutX="224.0" layoutY="23.0" text="Data" />
+            <Label layoutX="410.0" layoutY="23.0" text="Filter" />
+            <Button fx:id="AddEmployee" layoutX="30.0" layoutY="68.0" mnemonicParsing="false" onAction="#handleAddEmployee" prefHeight="25.0" prefWidth="140.0" text="Add Employee" />
+            <Button fx:id="editEmployee" layoutX="30.0" layoutY="122.0" mnemonicParsing="false" onAction="#onOpenEditDialog" prefHeight="25.0" prefWidth="140.0" text="Edit Employee" />
+            <Button fx:id="deleteEmployee" layoutX="30.0" layoutY="178.0" mnemonicParsing="false" onAction="#onDeleteEmployee" prefHeight="25.0" prefWidth="140.0" text="Delete Employee " />
+            <Button fx:id="importButtons" layoutX="224.0" layoutY="68.0" mnemonicParsing="false" onAction="#onImpButtons" prefHeight="25.0" prefWidth="140.0" text="Import" />
+            <Button fx:id="exportButtons" layoutX="224.0" layoutY="122.0" mnemonicParsing="false" onAction="#onExpButtons" prefHeight="25.0" prefWidth="140.0" text="Export" />
+            <Button layoutX="224.0" layoutY="178.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="140.0" text="Print" />
+            <ComboBox fx:id="CFilter" layoutX="410.0" layoutY="68.0" prefHeight="25.0" prefWidth="140.0" />
+            <TextField fx:id="TSearch" layoutX="410.0" layoutY="122.0" prefHeight="25.0" prefWidth="140.0" />
+            <Button fx:id="SearchButton" layoutX="410.0" layoutY="178.0" mnemonicParsing="false" onAction="#onSearchEmployee" prefHeight="25.0" prefWidth="140.0" text="Cautare" />
+         </children>
+      </Pane>
+      <Pane layoutY="240.0" prefHeight="500.0" prefWidth="722.0">
+         <children>
+            <TableView fx:id="tvData" prefHeight="500.0" prefWidth="722.0">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="id" />
+                <TableColumn fx:id="colIdnp" prefWidth="75.0" text="idnp" />
+                  <TableColumn fx:id="colName" prefWidth="75.0" text="name" />
+                  <TableColumn fx:id="colSurName" prefWidth="75.0" text="surname" />
+                  <TableColumn fx:id="colSalary" prefWidth="75.0" text="salary" />
+                  <TableColumn fx:id="colHireDay" prefWidth="94.0" text="hireDay" />
+                  <TableColumn fx:id="colBirhDay" prefWidth="86.0" text="birthDay" />
+                  <TableColumn fx:id="colGender" prefWidth="81.0" text="gender" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
